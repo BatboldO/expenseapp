@@ -38,7 +38,7 @@ const UserProvider = ({ children }) => {
 
     try {
       setLoading(true);
-      const { data } = await axios.post("http://localhost:3000/auth/signup", {
+      const { data } = await axios.post("http://localhost:3000/auth/signin", {
         userEmail: formUserData.email,
         userPassword: formUserData.password,
       });
@@ -77,7 +77,7 @@ const UserProvider = ({ children }) => {
       const { data } = await axios.post("http://localhost:8008/auth/signup", {
         email: formUserData.email,
         password: formUserData.password,
-        name: formUserData.name,
+        name: formUserData.name,  
       });
       console.log(data);
       setUser(data.user);

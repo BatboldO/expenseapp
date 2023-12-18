@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt");
 
 const signup = async (req, res) => {
   try {
-    console.log("SINGUP");
+    console.log("SIGNUP");
     const { name, email, password } = req.body;
 
     const findUser = await sql`SELECT email FROM users WHERE email=${email}`;

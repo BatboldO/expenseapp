@@ -20,7 +20,7 @@ export default function LogIn() {
           type="text"
           name="email"
           onChange={(e) => {
-            changeLoginUserData(e.target.name, e.target.value);
+            changeFormUserData(e.target.name, e.target.value);
           }}
           placeholder="Email"
           className="input input-bordered bg-[#F3F4F6] border-neutral-200 w-full mt-6 max-w-xs"
@@ -31,7 +31,7 @@ export default function LogIn() {
           type="password"
           name="password"
           onChange={(e) => {
-            changeLoginUserData(e.target.name, e.target.value);
+            changeFormUserData(e.target.name, e.target.value);
           }}
           placeholder="Password"
           className="input input-bordered bg-[#F3F4F6] border-neutral-200 w-full max-w-xs"
@@ -40,13 +40,13 @@ export default function LogIn() {
         <button
           onClick={login}
           disabled={loading}
-          className="btn btn-primary w-full max-w-xs text-lg text-white font-normal rounded-full"
+          className="btn btn-primary  w-full max-w-xs text-lg text-blue font-normal rounded-full"
         >
           Log in
         </button>
         <div className="flex gap-2 mt-7">
           <h3 className="text-[#334155]">Don't have an account?</h3>
-          <button
+          <button 
             className="text-[#0166FF]"
             onClick={() => router.push("/signup")}
           >

@@ -58,7 +58,23 @@ const Header = () => {
             Record
           </button>
           {open && <RecordForm open={open} closeForm={closeForm} />}
-          <img className="w-12 h-12" src="/cardPng/Avatar.png" alt="" />
+          {/* <label className="swap swap-rotate">
+            <input
+              type="checkbox"
+              className="theme-controller"
+              value={theme}
+              onChange={() => {
+                changeTheme(theme === "light" ? "dark" : "light");
+              }}
+            /> */}
+
+          {/* sun icon */}
+          {/* <SunIcon /> */}
+
+          {/* moon icon */}
+          {/* <MoonIcon /> */}
+          {/* </label> */}
+          <img className="w-12 h-12" src="/assets/cardPng/Avatar.png" alt="" />
         </div>
       </div>
     </div>

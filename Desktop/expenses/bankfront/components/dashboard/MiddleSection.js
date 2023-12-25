@@ -75,10 +75,10 @@ const MiddleSection = () => {
 
   return (
     <div className="w-full grid grid-cols-2 my-10 gap-9">
-      <div className="card bg-white">
+      <div className="card bg-white flex justify-center items-center p-4">
         <Bar data={data1} options={options1} />
       </div>
-      <div className="h-96 w-full  card bg-white flex">
+      <div className="card bg-white flex justify-center items-center p-4">
         <div className="h-96 w-96">
           <Doughnut options={options2} data={data2} />
         </div>
